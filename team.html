@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>LifeSure - Life Insurance Website Template</title>
+        <title>Serbacs India Private Limited - Business Advisory & Consulting</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -28,6 +28,33 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        
+        <style>
+            /* Mega Menu Core Styles */
+            .fs-sm { font-size: 0.82rem; line-height: 1.3; margin-bottom: 5px;}
+            .mega-menu a { transition: color 0.2s; color: var(--bs-dark) !important; }
+            .mega-menu a:hover { color: var(--bs-primary) !important; text-decoration: underline !important; }
+            .mega-menu-title { font-size: 0.85rem; letter-spacing: 0.5px; color: var(--bs-primary) !important; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+            
+            @media (max-width: 991.98px) {
+                .mega-menu { position: relative !important; width: 100% !important; box-shadow: none !important; padding: 10px 20px !important; margin: 0 !important; }
+                .mega-menu .row { color: var(--bs-dark) !important; }
+                .mega-menu ul { display: none; padding-left: 15px; margin-top: 10px; }
+                .mega-menu ul.show { display: block; }
+                .mega-menu-title::after { content: "\f078"; font-family: "Font Awesome 5 Free"; font-weight: 900; transition: 0.3s; transform: rotate(0deg); }
+                .mega-menu-title.active::after { transform: rotate(180deg); }
+                .mega-menu-title { border-bottom: 1px solid #ddd !important; padding-bottom: 8px !important; margin-bottom: 10px !important; }
+            }
+
+            @media (min-width: 992px) {
+                .nav-item.dropdown.position-static { position: static !important; }
+                .mega-menu { width: 100% !important; left: 0 !important; right: 0 !important; padding: 25px !important; position: absolute !important; display: none; border-radius: 0 0 10px 10px !important; }
+                .mega-menu.show { display: block; }
+                .mega-menu-title { cursor: default; }
+                .mega-menu-title::after { display: none; }
+                .mega-menu ul { display: block !important; }
+            }
+        </style>
     </head>
 
     <body>
@@ -47,10 +74,10 @@
                     <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                         <div class="d-flex flex-wrap">
                             <div class="border-end border-primary pe-3">
-                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Chennai, Tamil Nadu</a>
                             </div>
                             <div class="ps-3">
-                                <a href="mailto:example@gmail.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>example@gmail.com</a>
+                                <a href="mailto:serbacs@serbacs.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>serbacs@serbacs.com</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +111,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light"> 
                     <a href="#" class="navbar-brand p-0">
-                        <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i> LifeSure</h1>
+                        <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i> Serbacs</h1>
                         <!-- <img src="img/logo.png" alt="Logo"> -->
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -92,21 +119,113 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-0 mx-lg-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <div class="nav-item dropdown active">
-                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">Pages</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item active">Our team</a>
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
+                            <a href="about.html" class="nav-item nav-link ">About</a>
+                            
+                            <!-- Mega Menu for Services -->
+                            <div class="nav-item dropdown position-static">
+                                <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static">Services</a>
+                                <div class="dropdown-menu mega-menu shadow border-0 mt-0 py-4" style="background: var(--bs-light);">
+                                     <div class="container-fluid">
+                                        <div class="row">
+                                            <!-- Left Image -->
+                                            <div class="col-lg-3 d-none d-lg-block">
+                                                <div class="h-100 w-100 rounded shadow-sm" style="background: url('img/carousel-2.png') center center no-repeat; background-size: cover; min-height: 300px;"></div>
+                                            </div>
+                                            
+                                            <!-- Col 1 -->
+                                            <div class="col-lg-3 col-md-4">
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">1. Management Consulting</h6>
+                                                <ul class="list-unstyled mb-3 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">CFO & Finance Controller</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Budgeting & Cash Flow</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Feasibility & Biz Planning</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Internal Controls & SOP</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Costing & Dashboards</a></li>
+                                                </ul>
+                                                
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">2. Accounting & Reporting</h6>
+                                                <ul class="list-unstyled mb-3 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">General Accounting</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Financial Analysis</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">MIS Reporting</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Financial Statements</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Receivables & Payables</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Periodic Closings & Audit</a></li>
+                                                </ul>
+
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">3. Banking Process</h6>
+                                                <ul class="list-unstyled mb-2 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Bank Coordination</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Remittances (Inward/Outward)</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Banking Compliance & KYC</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Col 2 -->
+                                            <div class="col-lg-3 col-md-4">
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">4. Tax Consulting</h6>
+                                                <a href="service.html" class="d-block py-0 fs-sm fw-bold mb-1" style="color: var(--bs-primary) !important;">Direct Tax</a>
+                                                <ul class="list-unstyled mb-2 ms-2">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm opacity-75">Planning & ITR Filing</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm opacity-75">TDS/TCS Returns</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm opacity-75">Assessment Representation</a></li>
+                                                </ul>
+                                                <a href="service.html" class="d-block py-0 fs-sm fw-bold mt-1 mb-1" style="color: var(--bs-primary) !important;">Indirect Tax</a>
+                                                <ul class="list-unstyled mb-3 ms-2">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm opacity-75">GST Registration & Returns</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm opacity-75">LUT, E-Invoice, E-Way Bill</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm opacity-75">GST Audit & Notices</a></li>
+                                                </ul>
+
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">5. New Biz Formation</h6>
+                                                <ul class="list-unstyled mb-3 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Pvt/Pub Ltd, OPC, Section 8</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">LLP, Partnership, Prop.</a></li>
+                                                </ul>
+
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">6. Subsidiary Formation</h6>
+                                                <ul class="list-unstyled mb-2 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Wholly Owned Subsidiary</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Branch / Liaison Office</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">FEMA, RBI, MCA Compliance</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Col 3 -->
+                                            <div class="col-lg-3 col-md-4">
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">7. Entity Restructuring</h6>
+                                                <ul class="list-unstyled mb-3 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Pvt Ltd &harr; LLP Transitions</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Partnership &rarr; Pvt Ltd</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Migration Planning</a></li>
+                                                </ul>
+
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">8. Legal Consulting</h6>
+                                                <ul class="list-unstyled mb-3 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Corporate Legal Advisory</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Agreement Drafting & Review</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Labour Law & Compliance</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">General Legal Docs</a></li>
+                                                </ul>
+
+                                                <h6 class="text-uppercase border-bottom border-primary pb-1 mb-2 mega-menu-title">9. Compliance Handling</h6>
+                                                <ul class="list-unstyled mb-2 ms-1">
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">MCA/ROC Compliance</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">GST & Income Tax</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Labour Law Compliance</a></li>
+                                                    <li><a href="service.html" class="d-block py-0 fs-sm">Sector Specific Compliance</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            
+                            <a href="blog.html" class="nav-item nav-link ">Blog</a>
+                            <a href="contact.html" class="nav-item nav-link ">Contact</a>
                             <div class="nav-btn px-3">
-                                <a href="https://htmlcodex.com/downloading/?item=3422" class="btn btn-primary py-2 px-4 ms-3 flex-shrink-0"> Buy Pro Version</a>
+                                <a href="contact.html" class="btn btn-primary py-2 px-4 ms-3 flex-shrink-0">Get In Touch</a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +238,7 @@
                         </a>
                         <div class="d-flex flex-column ms-3">
                             <span>Call to Our Experts</span>
-                            <a href="tel:+ 0123 456 7890"><span class="text-dark">Free: + 0123 456 7890</span></a>
+                            <a href="tel:+91 98405 45933"><span class="text-dark">Free: +91 98405 45933</span></a>
                         </div>
                     </div>
                 </nav>
@@ -230,156 +349,57 @@
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-xl-9">
-                        <div class="mb-5">
-                            <div class="row g-4">
-                                <div class="col-md-6 col-lg-6 col-xl-5">
-                                    <div class="footer-item">
-                                        <a href="index.html" class="p-0">
-                                            <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3>
-                                            <!-- <img src="img/logo.png" alt="Logo"> -->
-                                        </a>
-                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                                        <div class="footer-btn d-flex">
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-3">
-                                    <div class="footer-item">
-                                        <h4 class="text-white mb-4">Useful Links</h4>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="footer-item">
-                                        <h4 class="mb-4 text-white">Instagram</h4>
-                                        <div class="row g-3">
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-1.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                           <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-2.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-3.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-4.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-5.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                           <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-6.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                            <div class="row g-0">
-                                <div class="col-12">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Address</h4>
-                                                    <p class="mb-0">123 Street New York.USA</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-envelope fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Mail Us</h4>
-                                                    <p class="mb-0">info@example.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Telephone</h4>
-                                                    <p class="mb-0">(+012) 3456 7890</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Column 1: Company -->
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                <h3 class="text-white"><i class="fab fa-slack me-3"></i> Serbacs</h3>
+                            </a>
+                            <p class="text-white mb-4">Study • Strategy • Success. A multidisciplinary business advisory delivering end-to-end solutions across finance, accounting, taxation, legal, and compliance.</p>
+                            <div class="footer-btn d-flex">
+                                <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-xl-3">
+                    <!-- Column 2: Services -->
+                    <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item">
-                            <h4 class="text-white mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="position-relative rounded-pill mb-4">
-                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            <h4 class="text-white mb-4">Our Services</h4>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Management Consulting</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Accounting & Reporting</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Tax Consulting</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> New Biz Formation</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Compliance Handling</a>
+                        </div>
+                    </div>
+                    <!-- Column 3: Quick Links -->
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                        </div>
+                    </div>
+                    <!-- Column 4: Get in Touch -->
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Get In Touch</h4>
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
+                                <p class="text-white mb-0">No. 4/608, G1, V.O.C Street, Kottivakkam, Chennai</p>
                             </div>
-                            <div class="d-flex flex-shrink-0">
-                                <div class="footer-btn">
-                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                                        <i class="fa fa-phone-alt fa-2x"></i>
-                                        <div class="position-absolute" style="top: 2px; right: 12px;">
-                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                    <span>Call to Our Experts</span>
-                                    <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456 7890</span></a>
-                                </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">+91 98405 45933</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">serbacs@serbacs.com</p>
                             </div>
                         </div>
                     </div>
@@ -393,12 +413,12 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Serbacs India Private Limited</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-start text-body">
                         <!--/*** The author’s attribution link must remain intact in the template. ***/-->
                         <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By <a class="border-bottom text-white" href="https://www.trizen-ai.com/">TrizenAI Technologies Private Limited</a>
                     </div>
                 </div>
             </div>
@@ -409,7 +429,26 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-        
+        <script>
+            // Mega Menu Mobile Toggle Logic
+            document.addEventListener('DOMContentLoaded', function() {
+                const titles = document.querySelectorAll('.mega-menu-title');
+                titles.forEach(title => {
+                    title.addEventListener('click', function(e) {
+                        if (window.innerWidth < 992) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            this.classList.toggle('active');
+                            const nextUl = this.nextElementSibling;
+                            if (nextUl && nextUl.tagName === 'UL') {
+                                nextUl.classList.toggle('show');
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
+
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
