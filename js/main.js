@@ -64,6 +64,18 @@
         return false;
     });
 
+    // Mega Menu Mobile Toggle Logic
+    $('.mega-menu-title').click(function (e) {
+        if ($(window).width() < 992) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).toggleClass('active');
+            var nextUl = $(this).next('ul');
+            if (nextUl.length && nextUl.prop('tagName') === 'UL') {
+                nextUl.toggleClass('show');
+            }
+        }
+    });
 
 })(jQuery);
 

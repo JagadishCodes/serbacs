@@ -28,33 +28,6 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-        
-        <style>
-            /* Mega Menu Core Styles */
-            .fs-sm { font-size: 0.82rem; line-height: 1.3; margin-bottom: 5px;}
-            .mega-menu a { transition: color 0.2s; color: var(--bs-dark) !important; }
-            .mega-menu a:hover { color: var(--bs-primary) !important; text-decoration: underline !important; }
-            .mega-menu-title { font-size: 0.85rem; letter-spacing: 0.5px; color: var(--bs-primary) !important; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-            
-            @media (max-width: 991.98px) {
-                .mega-menu { position: relative !important; width: 100% !important; box-shadow: none !important; padding: 10px 20px !important; margin: 0 !important; }
-                .mega-menu .row { color: var(--bs-dark) !important; }
-                .mega-menu ul { display: none; padding-left: 15px; margin-top: 10px; }
-                .mega-menu ul.show { display: block; }
-                .mega-menu-title::after { content: "\f078"; font-family: "Font Awesome 5 Free"; font-weight: 900; transition: 0.3s; transform: rotate(0deg); }
-                .mega-menu-title.active::after { transform: rotate(180deg); }
-                .mega-menu-title { border-bottom: 1px solid #ddd !important; padding-bottom: 8px !important; margin-bottom: 10px !important; }
-            }
-
-            @media (min-width: 992px) {
-                .nav-item.dropdown.position-static { position: static !important; }
-                .mega-menu { width: 100% !important; left: 0 !important; right: 0 !important; padding: 25px !important; position: absolute !important; display: none; border-radius: 0 0 10px 10px !important; }
-                .mega-menu.show { display: block; }
-                .mega-menu-title { cursor: default; }
-                .mega-menu-title::after { display: none; }
-                .mega-menu ul { display: block !important; }
-            }
-        </style>
     </head>
 
     <body>
@@ -83,21 +56,12 @@
                     </div>
                     <div class="col-lg-4 text-center text-lg-end">
                         <div class="d-flex justify-content-end">
-                            <div class="d-flex border-end border-primary pe-3">
+                            <div class="d-flex pe-3">
                                 <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
                                 <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
-                            <div class="dropdown ms-3">
-                                <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
-                                <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">English</a>
-                                    <a href="#" class="dropdown-item">Bangla</a>
-                                    <a href="#" class="dropdown-item">French</a>
-                                    <a href="#" class="dropdown-item">Spanish</a>
-                                    <a href="#" class="dropdown-item">Arabic</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -448,26 +412,6 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        <script>
-            // Mega Menu Mobile Toggle Logic
-            document.addEventListener('DOMContentLoaded', function() {
-                const titles = document.querySelectorAll('.mega-menu-title');
-                titles.forEach(title => {
-                    title.addEventListener('click', function(e) {
-                        if (window.innerWidth < 992) {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            this.classList.toggle('active');
-                            const nextUl = this.nextElementSibling;
-                            if (nextUl && nextUl.tagName === 'UL') {
-                                nextUl.classList.toggle('show');
-                            }
-                        }
-                    });
-                });
-            });
-        </script>
 
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
